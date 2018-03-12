@@ -5,13 +5,36 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Java 2</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <title>Meme generátor o letání</title>
 </head>
 <body>
+    <div class ="all-content">
+    <div class = "container">
+        <h1>Meme Generátor o létání</h1>
+        <button onclick="window.location.href='meme.html'">Generuj nové</button>
+    </div>
 
-    <h1>Meme Generátor</h1>
-    <span th:text="${obrazekNahodny}">cislo obrazku</span>
-    <span th:text="${vyrokNahodny}">cislo obrazku</span>
+    <div class="container">
+
+    <img th:src="${'images/obrazek' + obrazekNahodny + '.jpg'}"/>
+        <div class="up-right">
+    <div th:text="${vyrokNahodny}">
+    </div>
+        <div class="author"th:text="${vyrokAutor}"></div>
+
+        </div>
+
+    </div>
+    <div class = "container">
+    <a th:href="${linkZdroj}">Zdroj obrázku</a>
+    <br>
+    <a href="https://www.cernaskrinka.net/">Zdroje citátů</a>
+    </div>
+    </div>
+
+
 
 </body>
 </html>

@@ -1,0 +1,47 @@
+.all-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container {
+    position: relative;
+    width: auto;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    
+}
+/* Bottom right text */
+.up-right {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 30%;
+    text-align: right;
+    color: aquamarine;
+    text-shadow:
+            0.07em 0 black,
+            0 0.07em black,
+            -0.07em 0 black,
+            0 -0.07em black;
+
+}
+.author {
+    font-style:italic;
+    font-size: small;
+
+}
+img {
+    width:100%;
+    margin: 10px;
+}
+h1 {
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+}
+button {
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    background-color: aquamarine;
+    border-radius: 15px;
+    font-size: large;
+}
